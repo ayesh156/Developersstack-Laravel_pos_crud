@@ -4,7 +4,8 @@ use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return redirect('http://localhost:8000/api/v1/customers');
 });
 
 Route::get('/api/v1/customers',[CustomerController::class,'customers'])->name('customers.customer');
