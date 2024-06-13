@@ -8,9 +8,9 @@
             <tr>
                 <th>Index</th>
                 <th>Name</th>
-                <th>Address</th>
-                <th>Designation</th>
-                <th>Age</th>
+                <th class="d-none d-md-table-cell">Address</th>
+                <th class="d-none d-md-table-cell">Designation</th>
+                <th class="d-none d-md-table-cell">Age</th>
                 <th>Modification</th>
                 <th>Delete Data</th>
             </tr>
@@ -20,9 +20,9 @@
                 <tr>
                     <td>{{$customer->id}}</td>
                     <td>{{$customer->name}}</td>
-                    <td>{{$customer->address}}</td>
-                    <td>{{$customer->designation}}</td>
-                    <td>{{$customer->age}}</td>
+                    <td class="d-none d-md-table-cell">{{$customer->address}}</td>
+                    <td class="d-none d-md-table-cell">{{$customer->designation}}</td>
+                    <td class="d-none d-md-table-cell">{{$customer->age}}</td>
                     <td>
                         <a href="{{route('customers.modify-customer', ['customer' => $customer])}}"
                             class="btn btn-warning btn-sm">Update</a>

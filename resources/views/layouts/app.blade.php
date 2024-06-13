@@ -27,6 +27,7 @@
 
     <!-- Bootstrap JS and Popper.js CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('assets/bootstrap.js') }}"></script>
 </body>
 
 </html>
